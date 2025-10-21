@@ -29,6 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 /* set default CSS */
@@ -46,19 +47,58 @@ body {
   height: 100vh; 
 }
 
+/* Corsor */
+
+.cursor {
+    background-color: var(--font);
+    width: 10px;
+    height: 10px;
+    cursor: none;
+    border-radius: 50px;
+    position: absolute;
+}
+
 /* Acceuil Menu */
 
 .AcceuilMenu {
   flex: 0 0 10%; 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.AcceuilMenu h1 {
-  font-family: Ironmonger_Black_Regular;
-  color: var(--red);
-  font-size: 20px;
+.AcceuilMenu img {
+  width: 25%;
+  height: auto;
   margin-left: 4%;
+}
+
+.menu {
+  flex: 0 0 10%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 4%;
+  gap: 125px
+}
+
+.menu button {
+  background-color: var(--bg);
+  font-family: Analogia_Italic;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid var(--font) 1px;
+}
+
+.menu button:hover {
+  background-color: var(--font);
+  color: var(--bg);
+  border-color: var(--bg);
 }
 
 /* Acceuil Main */
