@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: Analogia_Regular;
+    src: url("/src/font/analogia-regular.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+    font-family: Analogia_Italic;
+    src: url("/src/font/Analogia-Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Ironmonger_Black_Regular;
+    src: url("/src/font/Ironmonger\ Black\ Regular.otf") format("opentype");
+}
+
+:root {
+  --bg: #f3f3f3;
+  --font: #3f3f3f;
+  --red: #dc1051;
+}
+
+[data-theme="dark"] {
+  --font: #f3f3f3;
+  --bg: #3f3f3f;
+}
+
+/* --- CSS Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set default CSS */
+
+body {
+  background-color: var(--bg);
+  color: var(--font);
+  font-family: Analogia_Regular;
+  letter-spacing: -0.014em;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+/* Acceuil Menu */
+
+.AcceuilMenu {
+  flex: 0 0 10%; 
+  display: flex;
+  align-items: center;
+}
+
+.AcceuilMenu h1 {
+  font-family: Ironmonger_Black_Regular;
+  color: var(--red);
+  font-size: 20px;
+  margin-left: 4%;
+}
+
+/* Acceuil Main */
+
+.AcceuilMain {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.AcceuilMain p {
+  font-size: 9.5rem;
+  line-height: 1em;
+  margin-left: 4%;
+  margin-bottom: 2%;
+}
+
+.AcceuilMain img {
+  position: absolute;
+  width: 97%;
+  height: auto;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 1%;
 }
