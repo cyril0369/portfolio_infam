@@ -29,7 +29,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: none;
 }
 
 /* set default CSS */
@@ -39,6 +38,7 @@ body {
   color: var(--font);
   font-family: Analogia_Regular;
   letter-spacing: -0.014em;
+  /* cursor: none; */
 }
 
 .App {
@@ -51,11 +51,12 @@ body {
 
 .cursor {
     background-color: var(--font);
-    width: 10px;
-    height: 10px;
-    cursor: none;
+    width: 15px;
+    height: 15px;
+    /* cursor: none; */
     border-radius: 50px;
     position: absolute;
+    z-index: 9999;
 }
 
 /* Acceuil Menu */
