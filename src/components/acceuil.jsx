@@ -1,4 +1,5 @@
 import logo from "../images/LOGO_PAGE_D_ACCUEIL.svg"
+import Nom from "../images/NOM_PAGE_D_ACCUEIL.svg"
 import {lerp, pointOrEllipseIntersection} from "../utils/linear_interpolation.js"
 
 let a = 100;
@@ -29,15 +30,25 @@ document.addEventListener('mousemove', e =>{
     )
 })
 
-export default function AcceuilMain() {
+export default function Acceuil() {
     return(
-        <div className="AcceuilMain">
-            <img id="LogoAcceuil" className="LogoAcceuil" src={logo} alt="LOGO PAGE D'ACCUEIL" />
-            <p>
-                Designer graphique <br />
-                specialisé dans le secteur <br />
-                culturel et musicale
-            </p>
+        <div className="Acceuil">
+            <div className="AcceuilMenu">
+                <img src={Nom} alt="Nom page d'acceuil" />
+                <div className="menu">
+                    <button>Projets</button>
+                    <button>À propos</button>
+                </div>
+            </div>
+            <div className="AcceuilMain">
+                <img id="LogoAcceuil" className="LogoAcceuil" src={logo} alt="LOGO PAGE D'ACCUEIL" />
+                <p>
+                    Designer graphique <br />
+                    specialisé dans le secteur <br />
+                    culturel et musicale
+                </p>
+            </div>
         </div>
+        
     )
 }

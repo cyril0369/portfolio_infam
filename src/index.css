@@ -42,8 +42,6 @@ body {
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
   height: 100vh; 
 }
 
@@ -60,6 +58,12 @@ body {
 }
 
 /* Acceuil Menu */
+
+.Acceuil {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
 
 .AcceuilMenu {
   flex: 0 0 10%; 
