@@ -4,11 +4,11 @@ import MiniLogo from "../images/LOGO_PETIT_HEADER.svg"
 
 export default function Menu({ isHome = true }) {
     return (
-        <div className={`Menu ${isHome ? "home" : "sub"}`}>
+        <div className='Menu'>
             {isHome ? (
-                <img class='NomInfam' src={Nom} alt="Nom page d'acceuil" />
+                <img className='NomInfam' src={Nom} alt="Nom page d'acceuil" />
             ) : (
-                <img class='LogoInfam' src={MiniLogo} alt="Mini logo header" />
+                <img className='LogoInfam' src={MiniLogo} alt="Mini logo header" />
             )}
             <div className="menu">
                 <button>Projets</button>

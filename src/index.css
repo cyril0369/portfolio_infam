@@ -127,7 +127,9 @@ body {
   margin-bottom: 2%;
 }
 
-.AcceuilMain img {
+/* Image Animated */
+
+.LogoAnimated {
   position: absolute;
   width: 97%;
   height: auto;
