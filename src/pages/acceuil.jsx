@@ -45,6 +45,5 @@ export default function Acceuil() {
                 </p>
             </div>
         </div>
-        
     )
 }

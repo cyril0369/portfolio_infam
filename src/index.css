@@ -72,8 +72,14 @@ body {
   justify-content: space-between;
 }
 
-.Menu img {
+.NomInfam {
   width: 25%;
+  height: auto;
+  margin-left: 4%;
+}
+
+.LogoInfam {
+  width: 5.5%;
   height: auto;
   margin-left: 4%;
 }
