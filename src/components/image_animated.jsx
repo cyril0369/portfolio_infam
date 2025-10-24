@@ -27,8 +27,8 @@ export default function LogoAnimated({ isHome = true }) {
         let cx = width / 2;
         let cy = height / 2;
         const hit = pointOrEllipseIntersection(px, py, cx, cy, a, b);
-        imageX = lerp(imageX, hit.x, 0.05);
-        imageY = lerp(imageY, hit.y, 0.05);
+        imageX = lerp(imageX, hit.x, 0.03);
+        imageY = lerp(imageY, hit.y, 0.03);
         image_to_move.setAttribute('style', 'top:'+((imageY - 300))+
         "px; left:"+(imageX)+"px;"
         )
