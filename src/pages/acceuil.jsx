@@ -10,7 +10,7 @@ export default function Acceuil() {
                 <p>
                     Designer graphique <br />
                     specialisé dans le secteur <br />
-                    culturel et musicale
+                    culturel et musical
                 </p>
             </div>
         </div>

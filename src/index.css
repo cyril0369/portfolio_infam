@@ -126,6 +126,25 @@ body {
   color: var(--bg);
 }
 
+.Projects button {
+  background-color: var(--bg);
+  color: var(--font);
+  font-family: Analogia_Italic;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid var(--font) 1px;
+}
+
+.Projects .ButtonProjects {
+  background-color: var(--font);
+  color: var(--bg);
+}
+
 /* Acceuil Main */
 
 .AcceuilMain {
