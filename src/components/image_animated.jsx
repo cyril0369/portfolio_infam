@@ -41,9 +41,9 @@ export default function LogoAnimated({ isHome = true }) {
     return (
         <div>
             {isHome ? (
-                <img ref={logoRef} id="LogoAnimated" className="LogoAnimated" src={ImageAcceil} alt="LOGO PAGE D'ACCUEIL" />
+                <img ref={logoRef} id="LogoAnimated" className="LogoAnimatedHome" src={ImageAcceil} alt="LOGO PAGE D'ACCUEIL" />
             ) : (
-                <img ref={logoRef} id="LogoAnimated" className="LogoAnimated" src={ImageAbout} alt="LOGO PAGE ABOUT" />
+                <img ref={logoRef} id="LogoAnimated" className="LogoAnimatedAbout" src={ImageAbout} alt="LOGO PAGE ABOUT" />
             )}
         </div> 
     )
