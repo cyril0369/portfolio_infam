@@ -208,6 +208,10 @@ body {
   font-size: 1.5rem;
 }
 
+.AboutPage h3 {
+  font-size: clamp(0.5rem, 1.7vw, 2rem);
+}
+
 .Ancelin {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -251,7 +255,7 @@ body {
 .TableServices {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  row-gap: 50px;
   margin-top: 120px;
   margin-bottom: 120px;
 }

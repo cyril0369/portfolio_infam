@@ -16,7 +16,7 @@ export default function About() {
                         musicale et l'évènementiel, j'ai travaillé pour d e<br />
                         nombreux artistes musicaux, et accumule maintenant<br />
                         plus de 2 ans d'expérience dans l'industrie musicale,<br />
-                        e t l'évènementiel.<br /><br />
+                        et l'évènementiel.<br /><br />
                         Diplomé d'un Diplôme National des Métiers d'Arts<br />
                         et du Design (DNMADe) à l'Ecole Supérieure de<br />
                         Design de Villefontaine, je travaille actuellement en<br />
@@ -45,7 +45,7 @@ export default function About() {
                     <h2>Pourquoi suis-je qualifié?</h2>
                     <div className="TableExperiences">
                         <div className="item">
-                            <p className="title element">Graphiste</p>
+                            <h3 className="title element">Graphiste</h3>
                             <p className="type element">CDI <br />
                             Totaal Rez/ Hooh <br />
                             Septembre 2025 - III</p>
@@ -58,7 +58,7 @@ export default function About() {
                             qui me permet de dialoguer aisément avec mes pairs.</p>
                         </div>
                         <div className="item">
-                            <p className="title element">Graphiste</p>
+                            <h3 className="title element">Graphiste</h3>
                             <p className="type element">CDI <br />
                             Totaal Rez/ Hooh <br />
                             Septembre 2025 - III</p>
@@ -71,7 +71,7 @@ export default function About() {
                             qui me permet de dialoguer aisément avec mes pairs.</p>
                         </div>
                         <div className="item">
-                            <p className="title element">Graphiste</p>
+                            <h3 className="title element">Graphiste</h3>
                             <p className="type element">CDI <br />
                             Totaal Rez/ Hooh <br />
                             Septembre 2025 - III</p>
@@ -84,7 +84,7 @@ export default function About() {
                             qui me permet de dialoguer aisément avec mes pairs.</p>
                         </div>
                         <div className="item">
-                            <p className="title element">Graphiste</p>
+                            <h3 className="title element">Graphiste</h3>
                             <p className="type element">CDI <br />
                             Totaal Rez/ Hooh <br />
                             Septembre 2025 - III</p>
@@ -97,7 +97,7 @@ export default function About() {
                             qui me permet de dialoguer aisémentp avec mes pairs.</p>
                         </div>
                         <div className="item">
-                            <p className="title element">Graphiste</p>
+                            <h3 className="title element">Graphiste</h3>
                             <p className="type element">CDI <br />
                             Totaal Rez/ Hooh <br />
                             Septembre 2025 - III</p>
@@ -119,27 +119,27 @@ export default function About() {
                     <h2>Comment puis-je vous aider ?</h2>
                     <div className="TableServices">
                         <div className="item">
-                            <p className="title">Identités visuelles</p>
+                            <h3 className="title">Identités visuelles</h3>
                             <p className="description">Logo types, chartes graphique. <br />
                             supports digitaux et imprimés</p>   
                         </div>
                         <div className="item">
-                            <p className="title">Identités visuelles</p>
+                            <h3 className="title">Identités visuelles</h3>
                             <p className="description">Logo types, chartes graphique. <br />
                             supports digitaux et imprimés</p>   
                         </div>
                         <div className="item">
-                            <p className="title">Identités visuelles</p>
+                            <h3 className="title">Identités visuelles</h3>
                             <p className="description">Logo types, chartes graphique. <br />
                             supports digitaux et imprimés</p>   
                         </div>
                         <div className="item">
-                            <p className="title">Identités visuelles</p>
+                            <h3 className="title">Identités visuelles</h3>
                             <p className="description">Logo types, chartes graphique. <br />
                             supports digitaux et imprimés</p>   
                         </div>
                         <div className="item">
-                            <p className="title">Identités visuelles</p>
+                            <h3 className="title">Identités visuelles</h3>
                             <p className="description">Logo types, chartes graphique. <br />
                             supports digitaux et imprimés</p>   
                         </div>
