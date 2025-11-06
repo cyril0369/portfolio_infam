@@ -57,6 +57,38 @@ body {
     z-index: 9999;
 }
 
+/* head title */
+
+p {
+  font-size: clamp(0.5rem, 1.3vw, 2rem);
+}
+
+h1 {
+  font-family: Ironmonger_Black_Regular;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h2 {
+  flex: 1;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: clamp(0.5rem, 1.7vw, 2rem);
+  font-weight: normal;
+}
+
+h4 {
+  font-family: Analogia_Italic;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+
+
 /* Menu */
 
 .Page {
@@ -194,26 +226,6 @@ body {
   margin-right: 4%;
 }
 
-.AboutPage p {
-  font-size: clamp(0.5rem, 1.3vw, 2rem);
-}
-
-.AboutPage h1 {
-  font-family: Ironmonger_Black_Regular;
-  font-size: 3rem;
-}
-
-.AboutPage h2 {
-  font-family: Analogia_Italic;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-.AboutPage h3 {
-  font-size: clamp(0.5rem, 1.7vw, 2rem);
-  font-weight: normal;
-}
-
 .Ancelin {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -274,17 +286,11 @@ body {
   margin-top: 2%;
 }
 
-.ListProjects h3 {
-  flex: 1;
-  text-align: center;
-  font-weight: normal;
-  font-size: 20px;
-}
-
 .ProjectsPage main {
   display: flex;
   height: 100%;
-  margin-top: 2%;
+  margin: 2% 4% 0% 4%;
+  gap: 4%;
 }
 
 .ProjectsPage .images {
@@ -296,3 +302,6 @@ body {
   flex: 1;
 }
 
+.ProjectsPage p {
+  font-size: 17px;
+}

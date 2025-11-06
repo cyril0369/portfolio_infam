@@ -42,7 +42,7 @@ export default function About() {
 
                 <div className="Experiences">
                     <h1>EXPÉRIENCES</h1>
-                    <h2>Pourquoi suis-je qualifié?</h2>
+                    <h4>Pourquoi suis-je qualifié?</h4>
                     <div className="TableExperiences">
                         <div className="item">
                             <h3 className="title element">Graphiste</h3>
@@ -116,7 +116,7 @@ export default function About() {
 
                 <div className="Services">
                     <h1>SERVICES</h1>
-                    <h2>Comment puis-je vous aider ?</h2>
+                    <h4>Comment puis-je vous aider ?</h4>
                     <div className="TableServices">
                         <div className="item">
                             <h3 className="title">Identités visuelles</h3>
