@@ -27,12 +27,13 @@ export default function Menu({ isHome = true, isAbout = false, isProject = false
 
   return (
     <div className="Menu">
-      {isHome ? (
-        <img className="NomInfam" src={Nom} alt="Nom page d'accueil" />
-      ) : (
-        <img className="LogoInfam" src={MiniLogo} alt="Mini logo header" onClick={goToHome}/>
-      )}
-
+      <div className="LogoMenu">
+        {isHome ? (
+          <h1>ANCELIN «INFAM» WATKINS</h1>
+        ) : (
+          <img src={MiniLogo} alt="Mini logo header" onClick={goToHome}/>
+        )}
+      </div>
       <div className={className}>
         <button
           className="ButtonProjects"
