@@ -5,13 +5,25 @@ export default function Projects() {
     return (
         <div className="Page ProjectsPage">
             <Menu isHome={false} isAbout={false} isProject={true} />
-            <div className="ListProjects">
-                <h2>Encore</h2>
-                <h2>High-lo</h2>
-                <h2>Plates-Formes</h2>
-                <h2>Lvline</h2>
-                <h2>LégendesIndusties</h2>
-                <h2>Covers/Posters</h2>
+            <div className="marquee-text">
+                <div className="marquee-text-track">
+                    <h2>Encore</h2>
+                    <h2>lvl 1ne</h2>
+                    <h2>Plates-Formes</h2>
+                    <h2>High-lo</h2>
+                    <h2>Le Bazar</h2>
+                    <h2>FIND ME</h2>
+                    <h2>Covers & affiches</h2>
+                    <h2>Aboueb Beat Tape</h2>
+                    <h2>Encore</h2>
+                    <h2>lvl 1ne</h2>
+                    <h2>Plates-Formes</h2>
+                    <h2>High-lo</h2>
+                    <h2>Le Bazar</h2>
+                    <h2>FIND ME</h2>
+                    <h2>Covers & affiches</h2>
+                    <h2>Aboueb Beat Tape</h2>
+                </div>
             </div>
             <main>
                 <div className="detail">

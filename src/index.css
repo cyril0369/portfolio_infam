@@ -102,6 +102,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 999;
 }
 
 .LogoMenu {
@@ -209,7 +210,7 @@ h4 {
   left: 50%;
   transform: translate(-50%);
   margin-bottom: 1%;
-  z-index: 999;
+  z-index: 998;
 }
 
 .LogoAnimatedAbout {
@@ -235,8 +236,8 @@ h4 {
 }
 
 .Ancelin {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   gap: 4%;
 }
@@ -312,4 +313,34 @@ h4 {
 
 .ProjectsPage p {
   font-size: 17px;
+}
+
+/* project defilant */
+
+.marquee-text-track h2 {
+  white-space: nowrap;
+}
+
+.marquee-text {
+  padding: 5px 0 2px 0;
+  margin: 0 4% 0 4%;
+  border-top: solid;
+  border-bottom: solid;
+  overflow: clip;
+  margin-top: 2%;
+}
+
+.marquee-text-track {
+  display: flex;
+  gap: 5.8rem;
+  padding-left: 5.8rem;
+  width: max-content;
+  white-space: nowrap;
+  animation: marquee-move-text 10s linear infinite;
+}
+
+@keyframes marquee-move-text {
+  to {
+    transform: translateX(-50%);
+  }
 }
