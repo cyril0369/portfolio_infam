@@ -98,7 +98,7 @@ h4 {
 /* menu */
 
 .Menu {
-  flex: 1 0 10%; 
+  flex: 1 0 10vh; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -115,13 +115,12 @@ h4 {
 
 .LogoMenu h1 {
   color: var(--red);
-  font-size: clamp(1rem, 1.5vw, 3rem);
+  font-size: medium;
   flex: 1 0 auto;
 }
 
-.LogoInfam {
-  width: 5.5%;
-  height: auto;
+.LogoMenu img {
+  height: 50px;
   margin-left: 4%;
 }
 
@@ -195,7 +194,7 @@ h4 {
 }
 
 .AcceuilMain p {
-  font-size: 9.5rem;
+  font-size: 9vw;
   line-height: 1em;
   margin-left: 4%;
   margin-bottom: 2%;
@@ -226,7 +225,7 @@ h4 {
 /* page about */
 
 .AboutPage header {
-  flex: 1;
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
