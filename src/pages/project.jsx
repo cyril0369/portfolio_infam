@@ -1,30 +1,12 @@
 import Menu from "../components/menu"
+import Marquee from "../components/marquee_project"
 import StarsProject from "../images/ÉTOILES_PROJET.svg"
 
 export default function Projects() {
     return (
         <div className="Page ProjectsPage">
             <Menu isHome={false} isAbout={false} isProject={true} />
-            <div className="marquee-text">
-                <div className="marquee-text-track">
-                    <h2>Encore</h2>
-                    <h2>lvl 1ne</h2>
-                    <h2>Plates-Formes</h2>
-                    <h2>High-lo</h2>
-                    <h2>Le Bazar</h2>
-                    <h2>FIND ME</h2>
-                    <h2>Covers & affiches</h2>
-                    <h2>Aboueb Beat Tape</h2>
-                    <h2>Encore</h2>
-                    <h2>lvl 1ne</h2>
-                    <h2>Plates-Formes</h2>
-                    <h2>High-lo</h2>
-                    <h2>Le Bazar</h2>
-                    <h2>FIND ME</h2>
-                    <h2>Covers & affiches</h2>
-                    <h2>Aboueb Beat Tape</h2>
-                </div>
-            </div>
+            <Marquee/>
             <main>
                 <div className="detail">
                     <h1>Encore</h1>
@@ -38,13 +20,13 @@ export default function Projects() {
                     diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
                     nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. <br /><br /></p>
                     <img src={StarsProject} alt="etoiles" />
-                    <p> <br /><br />Charte graphique <br />
+                    {/* <p> <br /><br />Charte graphique <br />
                     Logotype <br />
                     Supports de communication <br />
                     Affiches <br />
                     Flyers <br />
                     Drapeaux <br />
-                    Néon</p>
+                    Néon</p> */}
                 </div>
                 <div className="images">image ici</div>
             </main>
