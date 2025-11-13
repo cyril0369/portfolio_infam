@@ -226,7 +226,7 @@ h4 {
 /* page about */
 
 .AboutPage header {
-  flex: 1 0 auto;
+  flex: 1 0 90vh;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
