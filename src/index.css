@@ -295,19 +295,21 @@ h4 {
 .ProjectsPage main {
   flex: 1 1 0;
   display: flex;
-  margin: 2% 4% 0% 4%;
-  gap: 4%;
+  margin: 0% 4% 0% 4%;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .ProjectsPage .detail {
-  flex: 1;
+  flex: 1 0 33.3%;
   overflow: hidden;
+  padding: 0 4% 0 0;
 }
 
 .ProjectsPage .images-carousel {
-  flex: 2;
+  flex: 1 0 66.7%;
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   scrollbar-width: none;
 }
@@ -326,13 +328,12 @@ h4 {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 1%;
+  margin: 2% 0 4% 0;
 }
 
 .marquee-text {
   flex: 1;
   padding: 10px 0 5px 0;
-  margin: 0 4% 0 4%;
   border-top: solid;
   border-bottom: solid;
   overflow: hidden;

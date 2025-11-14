@@ -6,7 +6,7 @@ export default function Projects() {
     return (
         <div className="Page ProjectsPage">
             <Menu isHome={false} isAbout={false} isProject={true} />
-            <Marquee/>
+            {/* <Marquee/> */}
             <ProjectsDisplay/>
         </div>
     )

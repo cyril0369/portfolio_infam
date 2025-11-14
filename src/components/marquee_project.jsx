@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function Marquee() {
+export default function Marquee({ projects, onSelectProject }) {
   const trackRef = useRef(null);
   const scrollAnimRef = useRef(null);
 
@@ -107,26 +107,27 @@ export default function Marquee() {
       <div className="BoussoleCursor"></div>
         <div className="marquee-text">
             <div className="marquee-text-track" ref={trackRef}>
-                <h2 className="project-title encore" onClick={() => centerProject("encore")}>Encore</h2>
-                <h2 className="project-title lvl1ne" onClick={() => centerProject("lvl1ne")}>lvl 1ne</h2>
-                <h2 className="project-title plates-formes" onClick={() => centerProject("plates-formes")}>Plates-Formes</h2>
-                <h2 className="project-title high-lo" onClick={() => centerProject("high-lo")}>High-lo</h2>
-                <h2 className="project-title le-bazar" onClick={() => centerProject("le-bazar")}>Le Bazar</h2>
-                <h2 className="project-title find-me" onClick={() => centerProject("find-me")}>FIND ME</h2>
-                <h2 className="project-title covers-affiches" onClick={() => centerProject("covers-affiches")}>Covers & affiches</h2>
-                <h2 className="project-title aboueb-beat-tape" onClick={() => centerProject("aboueb-beat-tape")}>Aboueb Beat Tape</h2>
-                <h2 className="project-title visuels_de_tournée" onClick={() => centerProject("visuels_de_tournée")}>Visuels de tournée</h2>
+                <h2 className="project-title encore" onClick={() => { centerProject("encore"); onSelectProject("encore"); }}>Encore</h2>
+                <h2 className="project-title lvl1ne" onClick={() => { centerProject("lvl1ne"); onSelectProject("lvl_1ne"); }}>lvl 1ne</h2>
+                <h2 className="project-title plates-formes" onClick={() => { centerProject("plates-formes"); onSelectProject("plates_formes"); }}>Plates-Formes</h2>
+                <h2 className="project-title high-lo" onClick={() => { centerProject("high-lo"); onSelectProject("high_lo"); }}>High-lo</h2>
+                <h2 className="project-title le-bazar" onClick={() => { centerProject("le-bazar"); onSelectProject("le_bazar"); }}>Le Bazar</h2>
+                <h2 className="project-title find-me" onClick={() => { centerProject("find-me"); onSelectProject("find_me"); }}>FIND ME</h2>
+                <h2 className="project-title covers-affiches" onClick={() => { centerProject("covers-affiches"); onSelectProject("covers_affiches"); }}>Covers & affiches</h2>
+                <h2 className="project-title aboueb-beat-tape" onClick={() => { centerProject("aboueb-beat-tape"); onSelectProject("aboueb_beat_tape"); }}>Aboueb Beat Tape</h2>
+                <h2 className="project-title visuels_de_tournée" onClick={() => { centerProject("visuels_de_tournée"); onSelectProject("visuels_de_tournée"); }}>Visuels de tournée</h2>
+
                 {/* Duplication pour le carrousel infini */}
-                <h2 className="project-title encore2" onClick={() => centerProject("encore2")}>Encore</h2>
-                <h2 className="project-title lvl1ne2" onClick={() => centerProject("lvl1ne2")}>lvl 1ne</h2>
-                <h2 className="project-title plates-formes2" onClick={() => centerProject("plates-formes2")}>Plates-Formes</h2>
-                <h2 className="project-title high-lo2" onClick={() => centerProject("high-lo2")}>High-lo</h2>
-                <h2 className="project-title le-bazar2" onClick={() => centerProject("le-bazar2")}>Le Bazar</h2>
-                <h2 className="project-title find-me2" onClick={() => centerProject("find-me2")}>FIND ME</h2>
-                <h2 className="project-title covers-affiches2" onClick={() => centerProject("covers-affiches2")}>Covers & affiches</h2>
-                <h2 className="project-title aboueb-beat-tape2" onClick={() => centerProject("aboueb-beat-tape2")}>Aboueb Beat Tape</h2>
-                <h2 className="project-title visuels_de_tournée2" onClick={() => centerProject("visuels_de_tournée2")}>Visuels de tournée</h2>
-            </div>
+                <h2 className="project-title encore2" onClick={() => { centerProject("encore2"); onSelectProject("encore"); }}>Encore</h2>
+                <h2 className="project-title lvl1ne2" onClick={() => { centerProject("lvl1ne2"); onSelectProject("lvl_1ne"); }}>lvl 1ne</h2>
+                <h2 className="project-title plates-formes2" onClick={() => { centerProject("plates-formes2"); onSelectProject("plates_formes"); }}>Plates-Formes</h2>
+                <h2 className="project-title high-lo2" onClick={() => { centerProject("high-lo2"); onSelectProject("high_lo"); }}>High-lo</h2>
+                <h2 className="project-title le-bazar2" onClick={() => { centerProject("le-bazar2"); onSelectProject("le_bazar"); }}>Le Bazar</h2>
+                <h2 className="project-title find-me2" onClick={() => { centerProject("find-me2"); onSelectProject("find_me"); }}>FIND ME</h2>
+                <h2 className="project-title covers-affiches2" onClick={() => { centerProject("covers-affiches2"); onSelectProject("covers_affiches"); }}>Covers & affiches</h2>
+                <h2 className="project-title aboueb-beat-tape2" onClick={() => { centerProject("aboueb-beat-tape2"); onSelectProject("aboueb_beat_tape"); }}>Aboueb Beat Tape</h2>
+                <h2 className="project-title visuels_de_tournée2" onClick={() => { centerProject("visuels_de_tournée2"); onSelectProject("visuels_de_tournée"); }}>Visuels de tournée</h2>
+              </div>
         </div>
     </div>
 
