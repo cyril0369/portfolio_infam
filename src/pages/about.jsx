@@ -1,7 +1,7 @@
 import Menu from "../components/menu"
 import LogoAnimated from "../components/image_animated"
-import StarsAbout from "../images/ÉTOILES_A_PROPOS.svg"
-import AncelinPicture from "../images/PHOTO_A_PROPOs.png"
+import StarsAbout from "../data/graphic_element/ÉTOILES_A_PROPOS.svg"
+import AncelinPicture from "../data/graphic_element/PHOTO_A_PROPOs.png"
 
 export default function About() {
     return (

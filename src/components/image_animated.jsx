@@ -1,7 +1,7 @@
 
 import { useEffect, useRef } from "react"
-import ImageAcceil from "../images/LOGO_PAGE_D_ACCUEIL.svg"
-import ImageAbout from "../images/LOGO_FOND_A_PROPOS.svg"
+import ImageAcceil from "../data/graphic_element/LOGO_PAGE_D_ACCUEIL.svg"
+import ImageAbout from "../data/graphic_element/LOGO_FOND_A_PROPOS.svg"
 
 import {lerp, pointOrEllipseIntersection} from "../utils/linear_interpolation.js"
 

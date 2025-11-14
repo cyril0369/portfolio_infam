@@ -1,6 +1,6 @@
 import Menu from "../components/menu"
 import Marquee from "../components/marquee_project"
-import StarsProject from "../images/ÉTOILES_PROJET.svg"
+import StarsProject from "../data/graphic_element/ÉTOILES_PROJET.svg"
 
 export default function Projects() {
     return (

@@ -1,7 +1,7 @@
 import React from "react"
 import { useNavigate } from "react-router-dom";
-import Nom from "../images/NOM_PAGE_D_ACCUEIL.svg"
-import MiniLogo from "../images/LOGO_PETIT_HEADER.svg"
+import Nom from "../data/graphic_element/NOM_PAGE_D_ACCUEIL.svg"
+import MiniLogo from "../data/graphic_element/LOGO_PETIT_HEADER.svg"
 
 export default function Menu({ isHome = true, isAbout = false, isProject = false }) {
 
