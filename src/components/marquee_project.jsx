@@ -115,6 +115,7 @@ export default function Marquee() {
                 <h2 className="project-title find-me" onClick={() => centerProject("find-me")}>FIND ME</h2>
                 <h2 className="project-title covers-affiches" onClick={() => centerProject("covers-affiches")}>Covers & affiches</h2>
                 <h2 className="project-title aboueb-beat-tape" onClick={() => centerProject("aboueb-beat-tape")}>Aboueb Beat Tape</h2>
+                <h2 className="project-title visuels_de_tournée" onClick={() => centerProject("visuels_de_tournée")}>Visuels de tournée</h2>
                 {/* Duplication pour le carrousel infini */}
                 <h2 className="project-title encore2" onClick={() => centerProject("encore2")}>Encore</h2>
                 <h2 className="project-title lvl1ne2" onClick={() => centerProject("lvl1ne2")}>lvl 1ne</h2>
@@ -124,6 +125,7 @@ export default function Marquee() {
                 <h2 className="project-title find-me2" onClick={() => centerProject("find-me2")}>FIND ME</h2>
                 <h2 className="project-title covers-affiches2" onClick={() => centerProject("covers-affiches2")}>Covers & affiches</h2>
                 <h2 className="project-title aboueb-beat-tape2" onClick={() => centerProject("aboueb-beat-tape2")}>Aboueb Beat Tape</h2>
+                <h2 className="project-title visuels_de_tournée2" onClick={() => centerProject("visuels_de_tournée2")}>Visuels de tournée</h2>
             </div>
         </div>
     </div>
