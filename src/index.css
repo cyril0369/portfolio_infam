@@ -301,6 +301,12 @@ h4 {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .ProjectsPage main {
+    flex-direction: column;
+  }
+}
+
 .ProjectsPage .detail {
   flex: 1 0 33.3%;
   overflow: hidden;
