@@ -5,10 +5,6 @@ export default function Marquee({ onSelectProject }) {
   const scrollAnimRef = useRef(null);
   const animRef = useRef(null);
 
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-
   const getPercentToCenterProject = (className = "encore") => {
     const track = document.querySelector(".marquee-text-track");
     if (!track) return console.warn("Track non trouvé");

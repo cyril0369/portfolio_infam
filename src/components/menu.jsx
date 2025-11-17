@@ -1,29 +1,48 @@
-import React from "react"
+import React from "react";
 import { useNavigate } from "react-router-dom";
-import Nom from "../data/graphic_element/NOM_PAGE_D_ACCUEIL.svg"
-import MiniLogo from "../data/graphic_element/LOGO_PETIT_HEADER.svg"
+import { toggleTheme, sleep, toggleThemeWithFlash } from "../utils/utils";
+import Nom from "../data/graphic_element/NOM_PAGE_D_ACCUEIL.svg";
+import MiniLogo from "../data/graphic_element/LOGO_PETIT_HEADER.svg";
 
-export default function Menu({ isHome = true, isAbout = false, isProject = false }) {
-
+export default function Menu({
+  isHome = true,
+  isAbout = false,
+  isProject = false,
+}) {
+  const duration = 200;
   const navigate = useNavigate();
-  const goToAbout = () => {
-    navigate("/about")
-  }
-  const goToProject = () => {
-    navigate("/projects")
-  }
-  const goToHome = () => {
-    navigate("/")
-  }
+  const goToAbout = async () => {
+    // toggleTheme();
+    // await sleep(duration);
+    navigate("/about");
+    // await sleep(duration);
+    // toggleTheme();
+  };
+
+  const goToProject = async () => {
+    // toggleTheme();
+    // await sleep(duration);
+    navigate("/projects");
+    // await sleep(duration);
+    // toggleTheme();
+  };
+
+  const goToHome = async () => {
+    // toggleTheme();
+    // await sleep(duration);
+    navigate("/");
+    // await sleep(duration);
+    // toggleTheme();
+  };
 
   const className = [
     "Selector",
     isHome && "Home",
     isAbout && "About",
-    isProject && "Projects"
+    isProject && "Projects",
   ]
-    .filter(Boolean) 
-    .join(" "); 
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div className="Menu">
@@ -31,7 +50,7 @@ export default function Menu({ isHome = true, isAbout = false, isProject = false
         {isHome ? (
           <h1>ANCELIN «INFAM» WATKINS</h1>
         ) : (
-          <img src={MiniLogo} alt="Mini logo header" onClick={goToHome}/>
+          <img src={MiniLogo} alt="Mini logo header" onClick={goToHome} />
         )}
       </div>
       <div className={className}>
@@ -41,7 +60,7 @@ export default function Menu({ isHome = true, isAbout = false, isProject = false
         >
           Projets
         </button>
-        <button 
+        <button
           className="ButtonAbout"
           onClick={!isAbout ? goToAbout : undefined}
         >
