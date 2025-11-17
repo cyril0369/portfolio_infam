@@ -3,6 +3,7 @@ import Menu from "../components/menu";
 import Marquee from "../components/marquee_project";
 import ProjectsDisplay from "../components/projects_display";
 import projects from "../object/projects_objects.json";
+import Cursor from "../components/cursor";
 
 export default function Projects() {
   const [selectedKey, setSelectedKey] = useState("aboueb_beat_tape");
@@ -10,6 +11,7 @@ export default function Projects() {
 
   return (
     <div className="Page ProjectsPage">
+      <Cursor />
       <Menu isHome={false} isAbout={false} isProject={true} />
       <Marquee onSelectProject={setSelectedKey} />
       <ProjectsDisplay
