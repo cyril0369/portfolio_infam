@@ -58,6 +58,13 @@ body {
   z-index: 9999;
 }
 
+.cursor-hover {
+  width: 17px;
+  height: 17px;
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 80%;
+}
+
 /* head title */
 
 p {

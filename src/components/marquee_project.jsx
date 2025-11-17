@@ -167,7 +167,7 @@ export default function Marquee({ onSelectProject }) {
       <div className="marquee-text">
         <div className="marquee-text-track" ref={trackRef}>
           <h2
-            className="project-title encore"
+            className="project-title encore clickable"
             onClick={() => {
               centerProject("encore");
               onSelectProject("encore");
@@ -176,7 +176,7 @@ export default function Marquee({ onSelectProject }) {
             Encore
           </h2>
           <h2
-            className="project-title lvl1ne"
+            className="project-title lvl1ne clickable"
             onClick={() => {
               centerProject("lvl1ne");
               onSelectProject("lvl_1ne");
@@ -185,7 +185,7 @@ export default function Marquee({ onSelectProject }) {
             lvl 1ne
           </h2>
           <h2
-            className="project-title plates-formes"
+            className="project-title plates-formes clickable"
             onClick={() => {
               centerProject("plates-formes");
               onSelectProject("plates_formes");
@@ -194,7 +194,7 @@ export default function Marquee({ onSelectProject }) {
             Plates-Formes
           </h2>
           <h2
-            className="project-title high-lo"
+            className="project-title high-lo clickable"
             onClick={() => {
               centerProject("high-lo");
               onSelectProject("high_lo");
@@ -203,7 +203,7 @@ export default function Marquee({ onSelectProject }) {
             High-lo
           </h2>
           <h2
-            className="project-title le-bazar"
+            className="project-title le-bazar clickable"
             onClick={() => {
               centerProject("le-bazar");
               onSelectProject("le_bazar");
@@ -212,7 +212,7 @@ export default function Marquee({ onSelectProject }) {
             Le Bazar
           </h2>
           <h2
-            className="project-title find-me"
+            className="project-title find-me clickable"
             onClick={() => {
               centerProject("find-me");
               onSelectProject("find_me");
@@ -221,7 +221,7 @@ export default function Marquee({ onSelectProject }) {
             FIND ME
           </h2>
           <h2
-            className="project-title covers-affiches"
+            className="project-title covers-affiches clickable"
             onClick={() => {
               centerProject("covers-affiches");
               onSelectProject("covers_affiches");
@@ -230,7 +230,7 @@ export default function Marquee({ onSelectProject }) {
             Covers & affiches
           </h2>
           <h2
-            className="project-title aboueb-beat-tape"
+            className="project-title aboueb-beat-tape clickable"
             onClick={() => {
               centerProject("aboueb-beat-tape");
               onSelectProject("aboueb_beat_tape");
@@ -239,7 +239,7 @@ export default function Marquee({ onSelectProject }) {
             Aboueb Beat Tape
           </h2>
           <h2
-            className="project-title visuels_de_tournée"
+            className="project-title visuels_de_tournée clickable"
             onClick={() => {
               centerProject("visuels_de_tournée");
               onSelectProject("visuels_de_tournée");
@@ -250,7 +250,7 @@ export default function Marquee({ onSelectProject }) {
 
           {/* Duplication pour le carrousel infini */}
           <h2
-            className="project-title encore2"
+            className="project-title encore2 clickable"
             onClick={() => {
               centerProject("encore2");
               onSelectProject("encore");
@@ -259,7 +259,7 @@ export default function Marquee({ onSelectProject }) {
             Encore
           </h2>
           <h2
-            className="project-title lvl1ne2"
+            className="project-title lvl1ne2 clickable"
             onClick={() => {
               centerProject("lvl1ne2");
               onSelectProject("lvl_1ne");
@@ -268,7 +268,7 @@ export default function Marquee({ onSelectProject }) {
             lvl 1ne
           </h2>
           <h2
-            className="project-title plates-formes2"
+            className="project-title plates-formes2 clickable"
             onClick={() => {
               centerProject("plates-formes2");
               onSelectProject("plates_formes");
@@ -277,7 +277,7 @@ export default function Marquee({ onSelectProject }) {
             Plates-Formes
           </h2>
           <h2
-            className="project-title high-lo2"
+            className="project-title high-lo2 clickable"
             onClick={() => {
               centerProject("high-lo2");
               onSelectProject("high_lo");
@@ -286,7 +286,7 @@ export default function Marquee({ onSelectProject }) {
             High-lo
           </h2>
           <h2
-            className="project-title le-bazar2"
+            className="project-title le-bazar2 clickable"
             onClick={() => {
               centerProject("le-bazar2");
               onSelectProject("le_bazar");
@@ -295,7 +295,7 @@ export default function Marquee({ onSelectProject }) {
             Le Bazar
           </h2>
           <h2
-            className="project-title find-me2"
+            className="project-title find-me2 clickable"
             onClick={() => {
               centerProject("find-me2");
               onSelectProject("find_me");
@@ -304,7 +304,7 @@ export default function Marquee({ onSelectProject }) {
             FIND ME
           </h2>
           <h2
-            className="project-title covers-affiches2"
+            className="project-title covers-affiches2 clickable"
             onClick={() => {
               centerProject("covers-affiches2");
               onSelectProject("covers_affiches");
@@ -313,7 +313,7 @@ export default function Marquee({ onSelectProject }) {
             Covers & affiches
           </h2>
           <h2
-            className="project-title aboueb-beat-tape2"
+            className="project-title aboueb-beat-tape2 clickable"
             onClick={() => {
               centerProject("aboueb-beat-tape2");
               onSelectProject("aboueb_beat_tape");
@@ -322,7 +322,7 @@ export default function Marquee({ onSelectProject }) {
             Aboueb Beat Tape
           </h2>
           <h2
-            className="project-title visuels_de_tournée2"
+            className="project-title visuels_de_tournée2 clickable"
             onClick={() => {
               centerProject("visuels_de_tournée2");
               onSelectProject("visuels_de_tournée");

@@ -50,18 +50,23 @@ export default function Menu({
         {isHome ? (
           <h1>ANCELIN «INFAM» WATKINS</h1>
         ) : (
-          <img src={MiniLogo} alt="Mini logo header" onClick={goToHome} />
+          <img
+            className="clickable"
+            src={MiniLogo}
+            alt="Mini logo header"
+            onClick={goToHome}
+          />
         )}
       </div>
       <div className={className}>
         <button
-          className="ButtonProjects"
+          className="ButtonProjects clickable"
           onClick={!isProject ? goToProject : undefined}
         >
           Projets
         </button>
         <button
-          className="ButtonAbout"
+          className="ButtonAbout clickable"
           onClick={!isAbout ? goToAbout : undefined}
         >
           À propos
