@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio_infam/static/css/main.41dd7918.css",
+    "main.js": "/portfolio_infam/static/js/main.a05f9acb.js",
+    "static/media/PHOTO_A_PROPOs.png": "/portfolio_infam/static/media/PHOTO_A_PROPOs.382290c0c2b94ea127e2.png",
+    "static/media/analogia-regular.otf": "/portfolio_infam/static/media/analogia-regular.54921423443519e8270c.otf",
+    "static/media/Analogia-Italic.otf": "/portfolio_infam/static/media/Analogia-Italic.aac912a4a9c3bf8080d2.otf",
+    "static/media/Ironmonger Black Regular.otf": "/portfolio_infam/static/media/Ironmonger Black Regular.b83148be5f73c5f008a4.otf",
+    "static/media/LOGO_FOND_A_PROPOS.svg": "/portfolio_infam/static/media/LOGO_FOND_A_PROPOS.be78b80d2ada96c6be6065fca580417d.svg",
+    "static/media/LOGO_PAGE_D_ACCUEIL.svg": "/portfolio_infam/static/media/LOGO_PAGE_D_ACCUEIL.9049377bf5bbdd75c6ae425122c88b57.svg",
+    "static/media/LOGO_PETIT_HEADER.svg": "/portfolio_infam/static/media/LOGO_PETIT_HEADER.b4b08bc76b5ec9ecbf830eb81836d085.svg",
+    "static/media/ÉTOILES_A_PROPOS.svg": "/portfolio_infam/static/media/ÉTOILES_A_PROPOS.d36852910c00f045c0827e7407750e28.svg",
+    "static/media/NOM_PAGE_D_ACCUEIL.svg": "/portfolio_infam/static/media/NOM_PAGE_D_ACCUEIL.373cfce36e30ed11f985216081cce06a.svg",
+    "static/media/ÉTOILES_PROJET.svg": "/portfolio_infam/static/media/ÉTOILES_PROJET.98b10c44be3e6e649862cb468fcdaadc.svg",
+    "index.html": "/portfolio_infam/index.html",
+    "main.41dd7918.css.map": "/portfolio_infam/static/css/main.41dd7918.css.map",
+    "main.a05f9acb.js.map": "/portfolio_infam/static/js/main.a05f9acb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41dd7918.css",
+    "static/js/main.a05f9acb.js"
+  ]
+}
