@@ -1,16 +1,16 @@
-import Acceuil from './pages/acceuil.jsx';
-import About from './pages/about.jsx'
-import Projects from './pages/project.jsx';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Acceuil from "./pages/acceuil.jsx";
+import About from "./pages/about.jsx";
+import Projects from "./pages/project.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path='/' exact Component={Acceuil}></Route>
-          <Route path='/about' exact Component={About}></Route> 
-          <Route path='/projects' exact Component={Projects}></Route>
+          <Route path="/" exact Component={Acceuil}></Route>
+          <Route path="/about" exact Component={About}></Route>
+          <Route path="/projects" exact Component={Projects}></Route>
         </Routes>
       </BrowserRouter>
     </div>
