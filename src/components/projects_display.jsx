@@ -26,14 +26,14 @@ export default function ProjectsDisplay({ selectedProject, selectedKey }) {
           return isVideo ? (
             <video
               key={index}
-              src={`/projects/${selectedKey}/${file}`}
+              src={`./projects/${selectedKey}/${file}`}
               controls
               className="carousel-item"
             />
           ) : (
             <img
               key={index}
-              src={`/projects/${selectedKey}/${file}`}
+              src={`./projects/${selectedKey}/${file}`}
               alt={`${selectedProject.title} ${index + 1}`}
               className="carousel-item"
             />
