@@ -1,0 +1,56 @@
+image:
+  registry: ghcr.io
+  repository: "cyril0369/portfolio_infam"
+  tag: "latest"
+  pullPolicy: IfNotPresent
+
+imagePullSecret:
+  create: false
+  name: ghcr-pull-secret
+  registry: ghcr.io
+  username: ""
+  password: ""
+
+replicaCount: 2
+
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxSurge: 1
+    maxUnavailable: 0
+
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "50m"
+  limits:
+    memory: "128Mi"
+    cpu: "250m"
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  host: portfolio.khalil.dedyn.io
+  tls:
+    enabled: true
+    secretName: portfolio-infam-tls
+
+readinessProbe:
+  path: /
+  initialDelaySeconds: 5
+  periodSeconds: 10
+  failureThreshold: 3
+
+livenessProbe:
+  path: /
+  initialDelaySeconds: 15
+  periodSeconds: 20
+  failureThreshold: 3

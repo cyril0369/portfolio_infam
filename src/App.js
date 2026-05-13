@@ -4,9 +4,11 @@ import Projects from "./pages/project.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  const basename = process.env.PUBLIC_URL || "/";
+
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/" exact Component={Acceuil}></Route>
           <Route path="/about" exact Component={About}></Route>

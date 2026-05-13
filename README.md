@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# portfolio_infam
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Déploiement GitOps avec **ArgoCD**:
+1. push sur `main` -> tests + build + push image sur GHCR,
+2. le workflow met à jour `helm/portfolio-infam/values.yaml` avec le nouveau tag image,
+3. ArgoCD auto-sync et déploie sur k3s.
 
-## Available Scripts
+## CI/CD GitHub
 
-In the project directory, you can run:
+Workflow: `.github/workflows/ci-cd.yml`
 
-### `npm start`
+- `test`: installe les deps puis lance les tests.
+- `build-push`: build Docker Nginx et push `ghcr.io/<owner>/<repo>`.
+- `update-gitops`: commit/push du nouveau `image.tag` Helm pour déclencher ArgoCD.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Le trigger `push` ignore `helm/portfolio-infam/values.yaml` pour éviter une boucle infinie.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ArgoCD
 
-### `npm test`
+Manifest Application: `argocd/portfolio-infam-application.yaml`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Application ArgoCD:
+- source: ce repo (`main`, chart `helm/portfolio-infam`)
+- destination: namespace `portfolio-infam`
+- syncPolicy: `automated` + `prune` + `selfHeal`
 
-### `npm run build`
+## Pré-requis cluster
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ArgoCD installé dans le namespace `argocd`.
+- Secret pull GHCR `ghcr-pull-secret` dans le namespace `portfolio-infam`
+  (le chart référence ce secret, mais ne le crée pas par défaut).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Déploiement manuel ArgoCD (si besoin)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+kubectl apply -f argocd/portfolio-infam-application.yaml
+```

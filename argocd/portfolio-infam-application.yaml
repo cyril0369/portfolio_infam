@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: portfolio-infam
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/cyril0369/portfolio_infam.git
+    targetRevision: main
+    path: helm/portfolio-infam
+    helm:
+      valueFiles:
+        - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: portfolio-infam
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: portfolio-infam
+description: Portfolio static website served by nginx
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
