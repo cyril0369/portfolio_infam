@@ -1,7 +1,7 @@
 image:
   registry: ghcr.io
   repository: "cyril0369/portfolio_infam"
-  tag: "latest"
+  tag: "e036e86"
   pullPolicy: IfNotPresent
 
 imagePullSecret:
