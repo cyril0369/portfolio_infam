@@ -38,7 +38,7 @@ ingress:
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
-  host: portfolio.khalil.dedyn.io
+  host: portfolio-infam.khalil.dedyn.io
   tls:
     enabled: true
     secretName: portfolio-infam-tls
